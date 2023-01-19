@@ -1,0 +1,8 @@
+/* Change the font family and fix the body width */
+body {
+    font-family: 'Raleway', sans-serif;
+    width: 1400px;
+    margin: 0 auto;
+    border: 1px solid white;
+}
+
