@@ -2,7 +2,76 @@
 body {
     font-family: 'Raleway', sans-serif;
     width: 1400px;
+}
+/* Container */
+.container {
+    width: 100%;
     margin: 0 auto;
-    border: 1px solid white;
+    border: 1px solid black;
 }
 
+/* Header */
+.header {
+    padding-top: 21px;
+}
+
+.logo {
+    text-align: center;
+}
+
+.top-navigation {
+    margin-top: 88.62px;
+}
+
+.list {
+    display: flex;
+}
+
+.list-item {
+    text-align: center;
+    width: 50%;
+}
+
+.list-item a {
+    display: block;
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    line-height: 19px;
+    color: black;
+}
+
+.list-item a:hover {
+    color: #0065fc;
+    border-bottom: 3px solid #0065fc;
+}
+
+/* Filter Section */
+.filter {
+    margin-top: 30px;
+    padding: 0 72px;
+    border: 1px solid;
+}
+
+.filter-header h1{
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 26px;
+
+}
+
+.filter-header p{
+    font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    line-height: 19px;
+}
+
+
+
+
+/* Main */
+
+main {
+    padding: 0 72px;
+}
