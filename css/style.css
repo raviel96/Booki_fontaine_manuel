@@ -1,7 +1,7 @@
 /* Change the font family and fix the body width */
 body {
     font-family: 'Raleway', sans-serif;
-    width: 1400px;
+    /* width: 1400px; */
 }
 /* Container */
 .container {
@@ -50,7 +50,6 @@ body {
 .filter {
     margin-top: 30px;
     padding: 0 72px;
-    border: 1px solid;
 }
 
 .filter-header h1{
@@ -66,9 +65,69 @@ body {
     margin-bottom: 20px;
     line-height: 19px;
 }
+/* Filter bar */
+.filter-bar {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: 35px;
+    margin-bottom: 31px;
+}
 
+.filter-bar p {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 16px;
+}
 
+.filter-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 15px;
+}
 
+.filter-list-item i{
+    color: #0065fc;
+    width: 22px;
+    height: 22px;
+}
+
+.filter-list-item a{
+    display: block;
+    color: black;
+    font-weight: 700;
+    border: 3px solid #d9d9d9;
+    border-radius: 25px;
+    padding: 14px;
+}
+
+.filter-list-item a:hover {
+    background-color: #deebff;
+}
+
+.info-bar {
+    display: flex;
+    align-items: center;
+    padding-bottom: 42px;
+}
+
+.info-bar i {
+    color: #0065fc;
+    text-align: center;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #d9d9d9;
+    border-radius: 50px;
+    margin-right: 11px;
+    padding: 3px;
+    line-height: 19px;
+}
+
+.info-bar p {
+    font-size: 16px;
+    line-height: 19px;
+}
 
 /* Main */
 
