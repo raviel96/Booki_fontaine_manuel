@@ -131,6 +131,87 @@ body {
 
 /* Main */
 
-main {
-    padding: 0 72px;
+.most-popular {
+    background-color: #d9d9d9;
+    padding-top: 26px;
+    padding-bottom: 50px;
+    padding-left: 72px;
+    padding-right: 72px;
+}
+
+
+
+.popular-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.popular-header h2{
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 26px;
+    margin-bottom: 27px;
+}
+
+.popular-header i {
+    width: 18px;
+    height: 14px;
+    color: #0065fc;
+}
+
+.popular-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 13px;
+}
+
+.popular-content .card {
+    display: flex;
+    background-color: #fff;
+    border: 5px solid #FFFFFF;
+    border-radius: 20px;
+}
+
+.popular-content .card img {
+    border-radius: 20px 0 0 20px;
+}
+
+.popular-content .card-content {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+.popular-content .card-content-header, .popular-content .star {
+    margin-left: 19px;
+}
+
+.popular-content .card-content-header {
+    margin-top: 15px;
+}
+
+.popular-content .star {
+    margin-bottom: 15px;
+}
+
+.popular-content .card-content-header h3 {
+    width: 111px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 10px;
+}
+
+.popular-content .card-content-header p {
+    font-size: 13px;
+    line-height: 15px;
+}
+
+
+.card-content i {
+    color: #0065fc;
+}
+
+.card-content .empty-star {
+    color: #d9d9d9;
 }
