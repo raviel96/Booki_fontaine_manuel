@@ -201,7 +201,6 @@ body {
 }
 
 .popular-content .card {
-    height: 144px;
     display: flex;
     background-color: #fff;
     border: 5px solid #FFFFFF;
@@ -305,8 +304,9 @@ body {
     display: none;
 }
 
-/* Marseille activity section */
+/* Activity section */
 .activity {
+    margin-top: 105px;
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 79px;
@@ -327,7 +327,6 @@ body {
 
 .activity-content .card {
     border-radius: 20px;
-    height: 190px;
     background-color: #fff;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1))
 }
@@ -366,7 +365,7 @@ body {
     font-size: 16px;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:1024px) {
     /* Header */
     .header {
         display: flex;
@@ -400,7 +399,10 @@ body {
 
     /* Filter Section */
     .filter {
-        margin-top: 48px;
+        /* margin-top: 48px; */
+        margin: 48px 72px 0 72px;
+        padding: 0;
+        padding-bottom: 17px;
     }
 
     /* Search bar */
@@ -437,13 +439,8 @@ body {
     }
 
     .marseille-content {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-
-    .marseille-content .card {
-        width: 246px;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 12px 31px;
     }
 
     .display-more {
@@ -462,15 +459,70 @@ body {
     }
 
     .popular-content {
-        /* display: flex; */
-
-
-        /* display: grid;
+        display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        gap: 13px; */
+        gap: 13px;
     }
 
-    .popular-content .card {
-        width: 86px;
+    .popular-content .card img {
+        width: 106px;
     }
+
+    /* Activity section */
+    .activity {
+        margin: 70px 72px 70px 72px;
+    }
+
+    .activity-content {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 24px 50px;
+        margin-top: 34px;
+    }
+
+    .activity-content .card img {
+        height: 211px;
+    }
+
+    .activity-content .card:nth-child(3) p, .activity-content .card:nth-child(4) p {
+        width: 136px;
+
+    }
+
+    /* Footer */
+    .footer {
+        display: flex;
+    }
+
+    .footer div:nth-child(2) {
+        margin: 0 82px;
+    }
+}
+
+@media screen and (min-width:1440px) {
+
+    /* Main */
+    .lodging {
+        display: flex;
+        flex-flow: row-reverse nowrap;
+        justify-content: space-evenly;
+    }
+
+    /* Popular section */
+
+    .most-popular {
+        margin-bottom: 0;
+        margin-left: 0;
+        padding-bottom: 0;
+    }
+
+    .popular-content {
+        grid-template-columns: 1fr;
+    }
+
+    /* Activity section */
+
+    .activity-content .card img {
+        height: 388px;
+    }
+
 }
