@@ -367,7 +367,7 @@ body {
     font-size: 16px;
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:768px) {
     /* Header */
     .header {
         display: flex;
@@ -421,20 +421,20 @@ body {
     }
 
     /* Filter bar */
-    .filter-bar {
-        flex-flow: row nowrap;
-        align-items: center;
-    }
 
     .filter-list {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        margin-left: 17px;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
     .filter-list-item a{
         font-size: 17px;
         padding: 10px;
+    }
+
+    .info-bar p {
+        width: fit-content;
+        height: fit-content;
     }
 
     /* Main */
@@ -473,7 +473,7 @@ body {
 
     .popular-content {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         gap: 13px;
     }
 
@@ -487,7 +487,7 @@ body {
     }
 
     .activity-content {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         gap: 24px 50px;
         margin-top: 34px;
     }
@@ -511,7 +511,7 @@ body {
     }
 }
 
-@media screen and (min-width:1440px) {
+@media screen and (min-width:992px) {
 
     /* Main */
     .lodging {
