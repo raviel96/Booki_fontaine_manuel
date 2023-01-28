@@ -1,7 +1,6 @@
 /* Change the font family and fix the body width */
 body {
     font-family: 'Raleway', sans-serif;
-    /* width: 1400px; */
 }
 /* Container */
 .container {
@@ -71,7 +70,6 @@ body {
 }
 
 .form .button {
-    width: 50px;
     padding: 16px;
     cursor: pointer;
 }
@@ -99,6 +97,10 @@ body {
     background-color: #0065fc;
     border: 1px solid #0065fc;
     border-radius: 0px 15px 15px 0px;
+}
+
+.form .search-button p {
+    display: none;
 }
 
 /* Filter bar */
@@ -396,6 +398,7 @@ body {
         border-bottom: none;
         border-top: 3px solid #0065fc;
     }
+    
 
     /* Filter Section */
     .filter {
@@ -406,6 +409,16 @@ body {
     }
 
     /* Search bar */
+    .form .search-button i {
+        display: none;
+    }
+
+    .form .search-button p {
+        display: block;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21px;
+    }
 
     /* Filter bar */
     .filter-bar {
